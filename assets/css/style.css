@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #f5f5f5;
+}
+
+nav { 
+    margin: 0px;    
+    background-color: #e22bdf;
+    border-bottom: 8px solid #2e2be2;   
+
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    max-width: 960px;
+    margin: 0 auto;  
+    flex: 1;
+}
+
+#container { 
+    text-align: justify;
+    min-width: 600px;
+}
+
+#container div {
+    display: inline;
+}
+#container:after {
+    content: '';
+    width: 100%;
+    display: inline;
+}
+
+.container {    
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+h1 { 
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 72px;  
+    font-weight: bold;    
+    color: #2e2be2;
+    text-align: center; 
+    line-height: 100%;   
+}
+
+.crystal-image { 
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    border: 2px solid #000000;   
+}
+
+.crystal-image:nth-child(even) {
+    margin: 50px;
+    float: right;
+}
+.crystal-image:nth-child(odd) {
+    margin: 50px;
+}
+
+
+
+footer { 
+    width: 100%;
+    position: bottom;    
+    margin: 0px;
+    background-color: #e22bdf;
+    font-family: 'Nanum Brush Script', cursive;
+    border-top: 8px solid #2e2be2;
+    font-size: 48px;
+    color: #2e2be2;
+    font-weight: bold;  
+    text-align: center;
+    line-height: 200%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+.site-content {
+    max-width: 650px;   
+    }
+    .crystal-image:nth-child(even) {
+        margin: 5px;
+    }
+
+    .crystal-image:nth-child(odd) {
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+.site-content {
+    max-width: 500px;
+    margin: 0px;    
+}
+.crystal-image:nth-child(even) {
+    margin: 5px;
+}
+
+.crystal-image:nth-child(odd) {
+    margin: 5px;
+}
+}
