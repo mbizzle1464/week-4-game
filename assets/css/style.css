@@ -35,16 +35,9 @@ nav {
 }
 #container:after {
     content: '';
-    width: 100%;
     display: inline;
 }
 
-.container {    
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
-}
 
 h1 { 
     font-family: 'Nanum Brush Script', cursive;
@@ -55,23 +48,26 @@ h1 {
     line-height: 100%;   
 }
 
+p { 
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 32px;
+    color: #2e2be2;
+    text-align: center;
+    line-height: 150%;
+}
+
+#crystals { 
+    display: flex;  
+    justify-content: space-around;    
+    align-items: center;        
+}
+
 .crystal-image { 
     width: 274px;
-    overflow: auto;
-    position: relative;
-    float: left;
+    height: auto;
     border: 2px solid #000000;   
+    margin: 5px;
 }
-
-.crystal-image:nth-child(even) {
-    margin: 50px;
-    float: right;
-}
-.crystal-image:nth-child(odd) {
-    margin: 50px;
-}
-
-
 
 footer { 
     width: 100%;
@@ -89,18 +85,24 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+
+p {
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center; 
+    }
 
 .site-content {
     max-width: 650px;   
     }
-    .crystal-image:nth-child(even) {
-        margin: 5px;
-    }
 
-    .crystal-image:nth-child(odd) {
-        margin: 5px;
-    }
+  .crystal-image {
+      width: 150px;
+      height: auto;
+      border: 2px solid #000000;
+      margin: 5px;
+  }
 
 }
 
@@ -108,13 +110,11 @@ footer {
 
 .site-content {
     max-width: 500px;
-    margin: 0px;    
 }
-.crystal-image:nth-child(even) {
-    margin: 5px;
-}
-
-.crystal-image:nth-child(odd) {
+.crystal-image {
+    width: 100px;
+    height: auto;
+    border: 2px solid #000000;
     margin: 5px;
 }
 }
