@@ -9,7 +9,7 @@ var randonNumber = Math.floor(Math.random() * 100) + 20;
 var resetAndStart = function () {
     randonNumber = Math.floor(Math.random() * 100) + 20; 
     //console.log(randonNumber);
-    $("#crystals").empty(); 
+    $("#crystals").empty();     
     $("#number-to-guess").empty();      
     var targetNumber = $("<h1>");
     targetNumber.attr("data-randomValue", randonNumber);
@@ -46,8 +46,9 @@ $(document).on("click", ".crystal-image", function () {
         crystalValue = parseInt(crystalValue);
         counter += crystalValue;   
         console.log("New score: " + counter);
+       
 
-        $("#counter").html(counter);  
+        $("#counter").html(counter);   
 
         if (counter === randonNumber) {
             win++;
